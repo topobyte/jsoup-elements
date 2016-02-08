@@ -17,9 +17,10 @@
 
 package de.topobyte.jsoup.components;
 
-import de.topobyte.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.parser.Tag;
+
+import de.topobyte.jsoup.nodes.Element;
 
 public class TableHeader extends Element
 {

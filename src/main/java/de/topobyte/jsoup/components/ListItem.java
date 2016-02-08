@@ -17,8 +17,9 @@
 
 package de.topobyte.jsoup.components;
 
-import de.topobyte.jsoup.nodes.Element;
 import org.jsoup.parser.Tag;
+
+import de.topobyte.jsoup.nodes.Element;
 
 public class ListItem extends Element
 {

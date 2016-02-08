@@ -21,8 +21,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import de.topobyte.jsoup.nodes.Element;
 import org.jsoup.parser.Tag;
+
+import de.topobyte.jsoup.nodes.Element;
 
 public class ElementBuilder
 {
