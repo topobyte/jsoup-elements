@@ -18,6 +18,7 @@
 package de.topobyte.jsoup.nodes;
 
 import org.jsoup.nodes.Attributes;
+import org.jsoup.nodes.Node;
 import org.jsoup.parser.Tag;
 
 public class Element extends org.jsoup.nodes.Element
@@ -51,6 +52,24 @@ public class Element extends org.jsoup.nodes.Element
 	public Element(Tag tag, String baseUri, Attributes attributes)
 	{
 		super(tag, baseUri, attributes);
+	}
+
+	public Element inner(String text)
+	{
+		appendText(text);
+		return this;
+	}
+
+	public Node app(Node child)
+	{
+		appendChild(child);
+		return child;
+	}
+
+	public Element app(Element child)
+	{
+		appendChild(child);
+		return child;
 	}
 
 }
