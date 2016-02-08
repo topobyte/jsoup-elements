@@ -15,23 +15,22 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with jsoup-elements. If not, see <http://www.gnu.org/licenses/>.
 
-package de.topobyte.jsoup.components;
+package de.topobyte.jsoup.nodes;
 
-import de.topobyte.jsoup.nodes.Element;
+import org.jsoup.nodes.Attributes;
 import org.jsoup.parser.Tag;
 
-public class Div extends Element
+public class Element extends org.jsoup.nodes.Element
 {
 
-	public Div()
+	public Element(Tag tag, String baseUri)
 	{
-		super(Tag.valueOf("div"), "");
+		super(tag, baseUri);
 	}
 
-	public Div(String clazz)
+	public Element(Tag tag, String baseUri, Attributes attributes)
 	{
-		this();
-		attr("class", clazz);
+		super(tag, baseUri, attributes);
 	}
 
 }
