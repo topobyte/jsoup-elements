@@ -23,6 +23,26 @@ import org.jsoup.parser.Tag;
 public class Element extends org.jsoup.nodes.Element
 {
 
+	public Element(String tag)
+	{
+		super(Tag.valueOf(tag), "");
+	}
+
+	public Element(String tag, Attributes attributes)
+	{
+		super(Tag.valueOf(tag), "", attributes);
+	}
+
+	public Element(Tag tag)
+	{
+		super(tag, "");
+	}
+
+	public Element(Tag tag, Attributes attributes)
+	{
+		super(tag, "", attributes);
+	}
+
 	public Element(Tag tag, String baseUri)
 	{
 		super(tag, baseUri);
