@@ -18,18 +18,25 @@
 package de.topobyte.jsoup;
 
 import de.topobyte.jsoup.components.A;
+import de.topobyte.jsoup.components.B;
 import de.topobyte.jsoup.components.Blockquote;
 import de.topobyte.jsoup.components.Br;
 import de.topobyte.jsoup.components.Div;
+import de.topobyte.jsoup.components.Em;
 import de.topobyte.jsoup.components.Headline;
 import de.topobyte.jsoup.components.Headline.Level;
 import de.topobyte.jsoup.components.Hr;
+import de.topobyte.jsoup.components.I;
 import de.topobyte.jsoup.components.Img;
 import de.topobyte.jsoup.components.ListItem;
 import de.topobyte.jsoup.components.OrderedList;
 import de.topobyte.jsoup.components.P;
 import de.topobyte.jsoup.components.Pre;
+import de.topobyte.jsoup.components.Small;
 import de.topobyte.jsoup.components.Span;
+import de.topobyte.jsoup.components.Strong;
+import de.topobyte.jsoup.components.Sub;
+import de.topobyte.jsoup.components.Sup;
 import de.topobyte.jsoup.components.Table;
 import de.topobyte.jsoup.components.TableBody;
 import de.topobyte.jsoup.components.TableCell;
@@ -185,6 +192,41 @@ public class HTML
 	public static Img img(String src, String alt)
 	{
 		return new Img(src, alt);
+	}
+
+	public static B b()
+	{
+		return new B();
+	}
+
+	public static I i()
+	{
+		return new I();
+	}
+
+	public static Em em()
+	{
+		return new Em();
+	}
+
+	public static Strong strong()
+	{
+		return new Strong();
+	}
+
+	public static Small small()
+	{
+		return new Small();
+	}
+
+	public static Sup sup()
+	{
+		return new Sup();
+	}
+
+	public static Sub sub()
+	{
+		return new Sub();
 	}
 
 }
