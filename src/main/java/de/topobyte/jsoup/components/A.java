@@ -30,13 +30,19 @@ public class A extends Element
 	public A(String href)
 	{
 		this();
-		attributes().put("href", href);
+		href(href);
 	}
 
 	public A(String href, String content)
 	{
 		this(href);
 		appendText(content);
+	}
+
+	public A href(String href)
+	{
+		attributes().put("href", href);
+		return this;
 	}
 
 }
