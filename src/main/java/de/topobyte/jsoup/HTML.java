@@ -17,6 +17,7 @@
 
 package de.topobyte.jsoup;
 
+import de.topobyte.jsoup.components.A;
 import de.topobyte.jsoup.components.Blockquote;
 import de.topobyte.jsoup.components.Br;
 import de.topobyte.jsoup.components.Div;
@@ -158,6 +159,16 @@ public class HTML
 	public static Span span()
 	{
 		return new Span();
+	}
+
+	public static A a()
+	{
+		return new A();
+	}
+
+	public static A a(String href)
+	{
+		return new A(href);
 	}
 
 }
