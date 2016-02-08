@@ -17,30 +17,12 @@
 
 package de.topobyte.jsoup.components;
 
-import org.jsoup.nodes.Node;
-
-import de.topobyte.jsoup.nodes.Element;
-
-public class List extends Element
+public class OrderedList extends List
 {
 
-	public List(boolean ordered)
+	public OrderedList()
 	{
-		super(ordered ? "ol" : "ul");
-	}
-
-	public void addTextItem(String text)
-	{
-		ListItem item = new ListItem();
-		appendChild(item);
-		item.appendText(text);
-	}
-
-	public void addItem(Node e)
-	{
-		ListItem item = new ListItem();
-		appendChild(item);
-		item.appendChild(e);
+		super(true);
 	}
 
 }
