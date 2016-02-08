@@ -17,8 +17,6 @@
 
 package de.topobyte.jsoup.components;
 
-import org.jsoup.parser.Tag;
-
 import de.topobyte.jsoup.nodes.Element;
 
 public class ListItem extends Element
@@ -26,7 +24,7 @@ public class ListItem extends Element
 
 	public ListItem()
 	{
-		super(Tag.valueOf("li"), "");
+		super("li");
 	}
 
 }

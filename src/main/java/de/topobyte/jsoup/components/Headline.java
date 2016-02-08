@@ -42,7 +42,7 @@ public class Headline extends Element
 
 	public Headline(Level level)
 	{
-		super(level.tag, "");
+		super(level.tag);
 	}
 
 	public Headline(Level level, String text)

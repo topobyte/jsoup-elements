@@ -18,7 +18,6 @@
 package de.topobyte.jsoup.components;
 
 import org.jsoup.nodes.Node;
-import org.jsoup.parser.Tag;
 
 import de.topobyte.jsoup.nodes.Element;
 
@@ -27,7 +26,7 @@ public class TableHeader extends Element
 
 	public TableHeader()
 	{
-		super(Tag.valueOf("th"), "");
+		super("th");
 	}
 
 	public TableHeader(String content)

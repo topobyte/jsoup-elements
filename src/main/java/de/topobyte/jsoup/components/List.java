@@ -18,7 +18,6 @@
 package de.topobyte.jsoup.components;
 
 import org.jsoup.nodes.Node;
-import org.jsoup.parser.Tag;
 
 import de.topobyte.jsoup.nodes.Element;
 
@@ -27,7 +26,7 @@ public class List extends Element
 
 	public List()
 	{
-		super(Tag.valueOf("ul"), "");
+		super("ul");
 	}
 
 	public void addTextItem(String text)

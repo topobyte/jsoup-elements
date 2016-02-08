@@ -18,14 +18,13 @@
 package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
-import org.jsoup.parser.Tag;
 
 public class Div extends Element
 {
 
 	public Div()
 	{
-		super(Tag.valueOf("div"), "");
+		super("div");
 	}
 
 	public Div(String clazz)

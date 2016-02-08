@@ -17,8 +17,6 @@
 
 package de.topobyte.jsoup.components;
 
-import org.jsoup.parser.Tag;
-
 import de.topobyte.jsoup.nodes.Element;
 
 public class Table extends Element
@@ -26,7 +24,7 @@ public class Table extends Element
 
 	public Table()
 	{
-		super(Tag.valueOf("table"), "");
+		super("table");
 	}
 
 	public Table(String clazz)

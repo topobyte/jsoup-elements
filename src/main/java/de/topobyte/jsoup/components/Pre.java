@@ -17,8 +17,6 @@
 
 package de.topobyte.jsoup.components;
 
-import org.jsoup.parser.Tag;
-
 import de.topobyte.jsoup.nodes.Element;
 
 public class Pre extends Element
@@ -26,7 +24,7 @@ public class Pre extends Element
 
 	public Pre()
 	{
-		super(Tag.valueOf("pre"), "");
+		super("pre");
 	}
 
 	public Pre(String content)

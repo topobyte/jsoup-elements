@@ -17,8 +17,6 @@
 
 package de.topobyte.jsoup.components;
 
-import org.jsoup.parser.Tag;
-
 import de.topobyte.jsoup.nodes.Element;
 
 public class P extends Element
@@ -26,7 +24,7 @@ public class P extends Element
 
 	public P()
 	{
-		super(Tag.valueOf("p"), "");
+		super("p");
 	}
 
 	public P(String content)
