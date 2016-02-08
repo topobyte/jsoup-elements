@@ -74,6 +74,11 @@ public class HtmlBuilder
 		return title;
 	}
 
+	public void setTitle(String titleText)
+	{
+		title.text(titleText);
+	}
+
 	public Element getBody()
 	{
 		return body;
