@@ -15,7 +15,7 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with jsoup-elements. If not, see <http://www.gnu.org/licenses/>.
 
-package de.topobyte.jsoup.components;
+package de.topobyte.jsoup;
 
 import java.util.HashMap;
 import java.util.Map;
