@@ -24,6 +24,7 @@ import de.topobyte.jsoup.components.Div;
 import de.topobyte.jsoup.components.Headline;
 import de.topobyte.jsoup.components.Headline.Level;
 import de.topobyte.jsoup.components.Hr;
+import de.topobyte.jsoup.components.Img;
 import de.topobyte.jsoup.components.ListItem;
 import de.topobyte.jsoup.components.OrderedList;
 import de.topobyte.jsoup.components.P;
@@ -169,6 +170,21 @@ public class HTML
 	public static A a(String href)
 	{
 		return new A(href);
+	}
+
+	public static Img img()
+	{
+		return new Img();
+	}
+
+	public static Img img(String src)
+	{
+		return new Img(src);
+	}
+
+	public static Img img(String src, String alt)
+	{
+		return new Img(src, alt);
 	}
 
 }
