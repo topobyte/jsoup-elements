@@ -17,13 +17,17 @@
 
 package de.topobyte.jsoup;
 
+import de.topobyte.jsoup.components.Blockquote;
+import de.topobyte.jsoup.components.Br;
 import de.topobyte.jsoup.components.Div;
 import de.topobyte.jsoup.components.Headline;
 import de.topobyte.jsoup.components.Headline.Level;
+import de.topobyte.jsoup.components.Hr;
 import de.topobyte.jsoup.components.ListItem;
 import de.topobyte.jsoup.components.OrderedList;
 import de.topobyte.jsoup.components.P;
 import de.topobyte.jsoup.components.Pre;
+import de.topobyte.jsoup.components.Span;
 import de.topobyte.jsoup.components.Table;
 import de.topobyte.jsoup.components.TableBody;
 import de.topobyte.jsoup.components.TableCell;
@@ -31,6 +35,7 @@ import de.topobyte.jsoup.components.TableHead;
 import de.topobyte.jsoup.components.TableHeader;
 import de.topobyte.jsoup.components.TableRow;
 import de.topobyte.jsoup.components.UnorderedList;
+import de.topobyte.jsoup.components.Wbr;
 
 public class HTML
 {
@@ -48,6 +53,11 @@ public class HTML
 	public static P p()
 	{
 		return new P();
+	}
+
+	public static Hr hr()
+	{
+		return new Hr();
 	}
 
 	public static Headline h1()
@@ -100,6 +110,11 @@ public class HTML
 		return new Pre();
 	}
 
+	public static Blockquote blockquote()
+	{
+		return new Blockquote();
+	}
+
 	public static Table table()
 	{
 		return new Table();
@@ -128,6 +143,21 @@ public class HTML
 	public static TableCell td()
 	{
 		return new TableCell();
+	}
+
+	public static Br br()
+	{
+		return new Br();
+	}
+
+	public static Wbr wbr()
+	{
+		return new Wbr();
+	}
+
+	public static Span span()
+	{
+		return new Span();
 	}
 
 }
