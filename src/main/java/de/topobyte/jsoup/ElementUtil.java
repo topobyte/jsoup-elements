@@ -29,9 +29,20 @@ public class ElementUtil
 
 	public static void appendFragment(Element e, String fragment)
 	{
+		Element doc = Jsoup.parse(fragment);
+		appendFragment(e, doc);
+	}
+
+	public static void appendFragmentBody(Element e, String fragment)
+	{
 		Element body = Jsoup.parse(fragment).body();
+		appendFragment(e, body);
+	}
+
+	public static void appendFragment(Element e, Element fragment)
+	{
 		List<Node> nodes = new ArrayList<Node>();
-		nodes.addAll(body.childNodes());
+		nodes.addAll(fragment.childNodes());
 		for (Node child : nodes) {
 			e.appendChild(child);
 		}
