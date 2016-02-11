@@ -21,7 +21,10 @@ import de.topobyte.jsoup.components.A;
 import de.topobyte.jsoup.components.B;
 import de.topobyte.jsoup.components.Blockquote;
 import de.topobyte.jsoup.components.Br;
+import de.topobyte.jsoup.components.Dd;
+import de.topobyte.jsoup.components.DescriptionList;
 import de.topobyte.jsoup.components.Div;
+import de.topobyte.jsoup.components.Dt;
 import de.topobyte.jsoup.components.Em;
 import de.topobyte.jsoup.components.Headline;
 import de.topobyte.jsoup.components.Headline.Level;
@@ -109,9 +112,24 @@ public class HTML
 		return new OrderedList();
 	}
 
+	public static DescriptionList dl()
+	{
+		return new DescriptionList();
+	}
+
 	public static ListItem li()
 	{
 		return new ListItem();
+	}
+
+	public static Dd dd()
+	{
+		return new Dd();
+	}
+
+	public static Dt dt()
+	{
+		return new Dt();
 	}
 
 	public static Pre pre()
