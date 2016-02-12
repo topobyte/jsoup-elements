@@ -21,6 +21,7 @@ import de.topobyte.jsoup.components.A;
 import de.topobyte.jsoup.components.B;
 import de.topobyte.jsoup.components.Blockquote;
 import de.topobyte.jsoup.components.Br;
+import de.topobyte.jsoup.components.Code;
 import de.topobyte.jsoup.components.Dd;
 import de.topobyte.jsoup.components.DescriptionList;
 import de.topobyte.jsoup.components.Div;
@@ -136,6 +137,11 @@ public class HTML
 	{
 		return new Pre();
 	}
+
+    public static Code code()
+    {
+        return new Code();
+    }
 
 	public static Blockquote blockquote()
 	{
