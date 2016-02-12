@@ -63,13 +63,13 @@ public class Element extends org.jsoup.nodes.Element
 		return this;
 	}
 
-	public Node app(Node child)
+	public Node ac(Node child)
 	{
 		appendChild(child);
 		return child;
 	}
 
-	public Element app(Element child)
+	public Element ac(Element child)
 	{
 		appendChild(child);
 		return child;
@@ -87,6 +87,11 @@ public class Element extends org.jsoup.nodes.Element
 	{
 		super.attr(attributeKey, attributeValue);
 		return this;
+	}
+
+	public Element ap(Node child)
+	{
+		return appendChild(child);
 	}
 
 	@Override

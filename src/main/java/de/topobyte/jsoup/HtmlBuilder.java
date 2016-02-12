@@ -53,10 +53,10 @@ public class HtmlBuilder
 		Element html = new Html();
 		document.appendChild(html);
 
-		head = html.app(new Head());
-		title = head.app(new Title());
+		head = html.ac(new Head());
+		title = head.ac(new Title());
 
-		body = html.app(new Body());
+		body = html.ac(new Body());
 	}
 
 	public Document getDocument()
