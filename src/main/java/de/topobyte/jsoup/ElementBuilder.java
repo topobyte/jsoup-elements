@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.jsoup.nodes.TextNode;
 import org.jsoup.parser.Tag;
 
 import de.topobyte.jsoup.nodes.Element;
@@ -119,6 +120,11 @@ public class ElementBuilder
 	public static Element script(String jsHref)
 	{
 		return create("script", "src", jsHref);
+	}
+
+	public static TextNode text(String text)
+	{
+		return new TextNode(text, "");
 	}
 
 }
