@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.jsoup.nodes.Comment;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.parser.Tag;
 
@@ -125,6 +126,11 @@ public class ElementBuilder
 	public static TextNode text(String text)
 	{
 		return new TextNode(text, "");
+	}
+
+	public static Comment comment(String text)
+	{
+		return new Comment(text, "");
 	}
 
 }
