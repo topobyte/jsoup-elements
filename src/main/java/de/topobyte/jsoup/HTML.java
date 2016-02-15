@@ -20,22 +20,30 @@ package de.topobyte.jsoup;
 import de.topobyte.jsoup.components.A;
 import de.topobyte.jsoup.components.B;
 import de.topobyte.jsoup.components.Blockquote;
+import de.topobyte.jsoup.components.Body;
 import de.topobyte.jsoup.components.Br;
+import de.topobyte.jsoup.components.Caption;
 import de.topobyte.jsoup.components.Code;
 import de.topobyte.jsoup.components.Dd;
 import de.topobyte.jsoup.components.DescriptionList;
 import de.topobyte.jsoup.components.Div;
 import de.topobyte.jsoup.components.Dt;
 import de.topobyte.jsoup.components.Em;
+import de.topobyte.jsoup.components.Font;
+import de.topobyte.jsoup.components.Head;
 import de.topobyte.jsoup.components.Headline;
 import de.topobyte.jsoup.components.Headline.Level;
 import de.topobyte.jsoup.components.Hr;
+import de.topobyte.jsoup.components.Html;
 import de.topobyte.jsoup.components.I;
 import de.topobyte.jsoup.components.Img;
+import de.topobyte.jsoup.components.Link;
 import de.topobyte.jsoup.components.ListItem;
+import de.topobyte.jsoup.components.Meta;
 import de.topobyte.jsoup.components.OrderedList;
 import de.topobyte.jsoup.components.P;
 import de.topobyte.jsoup.components.Pre;
+import de.topobyte.jsoup.components.Script;
 import de.topobyte.jsoup.components.Small;
 import de.topobyte.jsoup.components.Span;
 import de.topobyte.jsoup.components.Strong;
@@ -47,11 +55,47 @@ import de.topobyte.jsoup.components.TableCell;
 import de.topobyte.jsoup.components.TableHead;
 import de.topobyte.jsoup.components.TableHeader;
 import de.topobyte.jsoup.components.TableRow;
+import de.topobyte.jsoup.components.Title;
 import de.topobyte.jsoup.components.UnorderedList;
 import de.topobyte.jsoup.components.Wbr;
 
 public class HTML
 {
+
+	public static Html html()
+	{
+		return new Html();
+	}
+
+	public static Body body()
+	{
+		return new Body();
+	}
+
+	public static Head head()
+	{
+		return new Head();
+	}
+
+	public static Title title()
+	{
+		return new Title();
+	}
+
+	public static Link link()
+	{
+		return new Link();
+	}
+
+	public static Script script()
+	{
+		return new Script();
+	}
+
+	public static Meta meta()
+	{
+		return new Meta();
+	}
 
 	public static Div div()
 	{
@@ -138,10 +182,10 @@ public class HTML
 		return new Pre();
 	}
 
-    public static Code code()
-    {
-        return new Code();
-    }
+	public static Code code()
+	{
+		return new Code();
+	}
 
 	public static Blockquote blockquote()
 	{
@@ -176,6 +220,11 @@ public class HTML
 	public static TableCell td()
 	{
 		return new TableCell();
+	}
+
+	public static Caption caption()
+	{
+		return new Caption();
 	}
 
 	public static Br br()
@@ -216,6 +265,11 @@ public class HTML
 	public static Img img(String src, String alt)
 	{
 		return new Img(src, alt);
+	}
+
+	public static Font font()
+	{
+		return new Font();
 	}
 
 	public static B b()

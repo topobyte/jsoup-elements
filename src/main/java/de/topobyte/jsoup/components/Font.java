@@ -19,12 +19,18 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Html extends Element
+public class Font extends Element
 {
 
-	public Html()
+	public Font()
 	{
-		super("html");
+		super("font");
+	}
+
+	public Font(String content)
+	{
+		this();
+		appendText(content);
 	}
 
 }

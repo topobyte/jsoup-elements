@@ -19,12 +19,12 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Html extends Element
+public class Script extends Element
 {
 
-	public Html()
+	public Script()
 	{
-		super("html");
+		super("script");
 	}
 
 }
