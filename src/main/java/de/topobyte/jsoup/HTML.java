@@ -47,6 +47,7 @@ import de.topobyte.jsoup.components.Script;
 import de.topobyte.jsoup.components.Small;
 import de.topobyte.jsoup.components.Span;
 import de.topobyte.jsoup.components.Strong;
+import de.topobyte.jsoup.components.Style;
 import de.topobyte.jsoup.components.Sub;
 import de.topobyte.jsoup.components.Sup;
 import de.topobyte.jsoup.components.Table;
@@ -90,6 +91,18 @@ public class HTML
 	public static Script script()
 	{
 		return new Script();
+	}
+
+	public static Style style()
+	{
+		return new Style();
+	}
+
+	public static Style styleCss()
+	{
+		Style style = new Style();
+		style.attr("type", "text/css");
+		return style;
 	}
 
 	public static Meta meta()
