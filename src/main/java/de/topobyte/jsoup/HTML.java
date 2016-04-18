@@ -139,9 +139,19 @@ public class HTML
 		return new Headline(Level.H1);
 	}
 
+	public static Headline h1(String text)
+	{
+		return new Headline(Level.H1, text);
+	}
+
 	public static Headline h2()
 	{
 		return new Headline(Level.H2);
+	}
+
+	public static Headline h2(String text)
+	{
+		return new Headline(Level.H2, text);
 	}
 
 	public static Headline h3()
@@ -149,9 +159,19 @@ public class HTML
 		return new Headline(Level.H3);
 	}
 
+	public static Headline h3(String text)
+	{
+		return new Headline(Level.H3, text);
+	}
+
 	public static Headline h4()
 	{
 		return new Headline(Level.H4);
+	}
+
+	public static Headline h4(String text)
+	{
+		return new Headline(Level.H4, text);
 	}
 
 	public static Headline h5()
@@ -159,9 +179,19 @@ public class HTML
 		return new Headline(Level.H5);
 	}
 
+	public static Headline h5(String text)
+	{
+		return new Headline(Level.H5, text);
+	}
+
 	public static Headline h6()
 	{
 		return new Headline(Level.H6);
+	}
+
+	public static Headline h6(String text)
+	{
+		return new Headline(Level.H6, text);
 	}
 
 	public static UnorderedList ul()
