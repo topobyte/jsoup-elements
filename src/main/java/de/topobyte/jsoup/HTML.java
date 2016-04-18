@@ -22,6 +22,7 @@ import de.topobyte.jsoup.components.B;
 import de.topobyte.jsoup.components.Blockquote;
 import de.topobyte.jsoup.components.Body;
 import de.topobyte.jsoup.components.Br;
+import de.topobyte.jsoup.components.Button;
 import de.topobyte.jsoup.components.Caption;
 import de.topobyte.jsoup.components.Code;
 import de.topobyte.jsoup.components.Dd;
@@ -30,6 +31,7 @@ import de.topobyte.jsoup.components.Div;
 import de.topobyte.jsoup.components.Dt;
 import de.topobyte.jsoup.components.Em;
 import de.topobyte.jsoup.components.Font;
+import de.topobyte.jsoup.components.Form;
 import de.topobyte.jsoup.components.Head;
 import de.topobyte.jsoup.components.Headline;
 import de.topobyte.jsoup.components.Headline.Level;
@@ -37,6 +39,8 @@ import de.topobyte.jsoup.components.Hr;
 import de.topobyte.jsoup.components.Html;
 import de.topobyte.jsoup.components.I;
 import de.topobyte.jsoup.components.Img;
+import de.topobyte.jsoup.components.Input;
+import de.topobyte.jsoup.components.Label;
 import de.topobyte.jsoup.components.Link;
 import de.topobyte.jsoup.components.ListItem;
 import de.topobyte.jsoup.components.Meta;
@@ -318,6 +322,26 @@ public class HTML
 	public static Sub sub()
 	{
 		return new Sub();
+	}
+
+	public static Form form()
+	{
+		return new Form();
+	}
+
+	public static Input input()
+	{
+		return new Input();
+	}
+
+	public static Button button()
+	{
+		return new Button();
+	}
+
+	public static Label label()
+	{
+		return new Label();
 	}
 
 }
