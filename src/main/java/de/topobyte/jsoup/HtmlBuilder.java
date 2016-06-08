@@ -22,6 +22,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Document.OutputSettings;
@@ -88,6 +90,14 @@ public class HtmlBuilder
 	{
 		String text = document.toString();
 		OutputStream os = new FileOutputStream(file);
+		os.write(text.getBytes(Charset.forName("UTF-8")));
+		os.close();
+	}
+
+	public void write(Path file) throws IOException
+	{
+		String text = document.toString();
+		OutputStream os = Files.newOutputStream(file);
 		os.write(text.getBytes(Charset.forName("UTF-8")));
 		os.close();
 	}
