@@ -38,6 +38,7 @@ public class HtmlBuilder
 {
 
 	private Document document;
+	private Element html;
 	private Element head;
 	private Element body;
 	private Element title;
@@ -52,7 +53,7 @@ public class HtmlBuilder
 		settings.prettyPrint(true);
 		document.outputSettings(settings);
 
-		Element html = new Html();
+		html = new Html();
 		document.appendChild(html);
 
 		head = html.ac(new Head());
@@ -64,6 +65,11 @@ public class HtmlBuilder
 	public Document getDocument()
 	{
 		return document;
+	}
+
+	public Element getHtml()
+	{
+		return html;
 	}
 
 	public Element getHead()
