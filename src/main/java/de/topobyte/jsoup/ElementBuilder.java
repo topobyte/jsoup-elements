@@ -67,7 +67,7 @@ public class ElementBuilder
 
 	public static Element create(String name, String... arguments)
 	{
-		Map<String, String> atts = new HashMap<String, String>();
+		Map<String, String> atts = new HashMap<>();
 		for (int i = 0; i < arguments.length / 2; i++) {
 			String key = arguments[2 * i];
 			String val = arguments[2 * i + 1];

@@ -41,7 +41,7 @@ public class ElementUtil
 
 	public static void appendFragment(Element e, Element fragment)
 	{
-		List<Node> nodes = new ArrayList<Node>();
+		List<Node> nodes = new ArrayList<>();
 		nodes.addAll(fragment.childNodes());
 		for (Node child : nodes) {
 			e.appendChild(child);
