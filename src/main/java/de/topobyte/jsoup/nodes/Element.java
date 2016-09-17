@@ -63,13 +63,7 @@ public class Element extends org.jsoup.nodes.Element
 		return this;
 	}
 
-	public Node ac(Node child)
-	{
-		appendChild(child);
-		return child;
-	}
-
-	public Element ac(Element child)
+	public <T extends Node> T ac(T child)
 	{
 		appendChild(child);
 		return child;
