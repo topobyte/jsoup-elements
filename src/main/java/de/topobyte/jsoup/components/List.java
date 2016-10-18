@@ -29,18 +29,23 @@ public class List extends Element
 		super(ordered ? "ol" : "ul");
 	}
 
-	public void addTextItem(String text)
+	public ListItem addItem()
 	{
-		ListItem item = new ListItem();
-		appendChild(item);
-		item.appendText(text);
+		return ac(new ListItem());
 	}
 
-	public void addItem(Node e)
+	public ListItem addTextItem(String text)
 	{
-		ListItem item = new ListItem();
-		appendChild(item);
-		item.appendChild(e);
+		ListItem listItem = addItem();
+		listItem.appendText(text);
+		return listItem;
+	}
+
+	public ListItem addItem(Node e)
+	{
+		ListItem listItem = addItem();
+		listItem.ap(e);
+		return listItem;
 	}
 
 }
