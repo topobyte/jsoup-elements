@@ -299,6 +299,13 @@ public class HTML
 		return new A(href);
 	}
 
+	public static A a(String href, String text)
+	{
+		A a = new A(href);
+		a.appendText(text);
+		return a;
+	}
+
 	public static Img img()
 	{
 		return new Img();
