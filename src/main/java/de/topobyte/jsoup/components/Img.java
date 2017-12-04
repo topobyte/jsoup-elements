@@ -37,7 +37,7 @@ public class Img extends Element
 	{
 		this();
 		src(src);
-		src(alt);
+		alt(alt);
 	}
 
 	public Img src(String src)
