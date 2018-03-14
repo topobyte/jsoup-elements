@@ -33,6 +33,12 @@ public class ElementUtil
 		appendFragment(e, doc);
 	}
 
+	public static void appendFragmentHead(Element e, String fragment)
+	{
+		Element head = Jsoup.parse(fragment).head();
+		appendFragment(e, head);
+	}
+
 	public static void appendFragmentBody(Element e, String fragment)
 	{
 		Element body = Jsoup.parse(fragment).body();
