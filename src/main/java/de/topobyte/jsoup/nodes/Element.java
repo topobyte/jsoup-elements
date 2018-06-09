@@ -151,10 +151,26 @@ public class Element extends org.jsoup.nodes.Element
 		return this;
 	}
 
+	public Element addClasses(Collection<String> classNames)
+	{
+		for (String className : classNames) {
+			super.addClass(className);
+		}
+		return this;
+	}
+
 	@Override
 	public Element removeClass(String className)
 	{
 		super.removeClass(className);
+		return this;
+	}
+
+	public Element removeClasses(Collection<String> classNames)
+	{
+		for (String className : classNames) {
+			super.removeClass(className);
+		}
 		return this;
 	}
 
