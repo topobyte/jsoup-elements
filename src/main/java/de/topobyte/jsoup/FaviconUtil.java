@@ -26,8 +26,8 @@ public class FaviconUtil
 
 	public static void addToHeader(Element head, String faviconPath)
 	{
-		Element favicon1 = create("link", "rel", "icon", "type",
-				"image/x-icon", "href", faviconPath);
+		Element favicon1 = create("link", "rel", "icon", "type", "image/x-icon",
+				"href", faviconPath);
 		Element favicon2 = create("link", "rel", "shortcut icon", "type",
 				"image/x-icon", "href", faviconPath);
 		Element favicon3 = create("link", "type", "image/x-icon", "href",

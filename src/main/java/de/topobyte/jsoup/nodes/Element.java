@@ -103,7 +103,8 @@ public class Element extends org.jsoup.nodes.Element
 	}
 
 	@Override
-	public Element insertChildren(int index, Collection<? extends Node> children)
+	public Element insertChildren(int index,
+			Collection<? extends Node> children)
 	{
 		super.insertChildren(index, children);
 		return this;
