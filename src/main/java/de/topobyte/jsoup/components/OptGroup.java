@@ -27,4 +27,9 @@ public class OptGroup extends Element
 		super("optgroup");
 	}
 
+	public void setLabel(String label)
+	{
+		attr("label", label);
+	}
+
 }
