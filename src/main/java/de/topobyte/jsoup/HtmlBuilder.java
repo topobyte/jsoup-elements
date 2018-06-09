@@ -32,16 +32,15 @@ import de.topobyte.jsoup.components.Body;
 import de.topobyte.jsoup.components.Head;
 import de.topobyte.jsoup.components.Html;
 import de.topobyte.jsoup.components.Title;
-import de.topobyte.jsoup.nodes.Element;
 
 public class HtmlBuilder
 {
 
 	private Document document;
-	private Element html;
-	private Element head;
-	private Element body;
-	private Element title;
+	private Html html;
+	private Head head;
+	private Body body;
+	private Title title;
 
 	public HtmlBuilder()
 	{
@@ -67,17 +66,17 @@ public class HtmlBuilder
 		return document;
 	}
 
-	public Element getHtml()
+	public Html getHtml()
 	{
 		return html;
 	}
 
-	public Element getHead()
+	public Head getHead()
 	{
 		return head;
 	}
 
-	public Element getTitle()
+	public Title getTitle()
 	{
 		return title;
 	}
@@ -87,7 +86,7 @@ public class HtmlBuilder
 		title.text(titleText);
 	}
 
-	public Element getBody()
+	public Body getBody()
 	{
 		return body;
 	}
