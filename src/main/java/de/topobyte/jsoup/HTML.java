@@ -44,10 +44,13 @@ import de.topobyte.jsoup.components.Label;
 import de.topobyte.jsoup.components.Link;
 import de.topobyte.jsoup.components.ListItem;
 import de.topobyte.jsoup.components.Meta;
+import de.topobyte.jsoup.components.OptGroup;
+import de.topobyte.jsoup.components.Option;
 import de.topobyte.jsoup.components.OrderedList;
 import de.topobyte.jsoup.components.P;
 import de.topobyte.jsoup.components.Pre;
 import de.topobyte.jsoup.components.Script;
+import de.topobyte.jsoup.components.Select;
 import de.topobyte.jsoup.components.Small;
 import de.topobyte.jsoup.components.Span;
 import de.topobyte.jsoup.components.Strong;
@@ -60,6 +63,7 @@ import de.topobyte.jsoup.components.TableCell;
 import de.topobyte.jsoup.components.TableHead;
 import de.topobyte.jsoup.components.TableHeader;
 import de.topobyte.jsoup.components.TableRow;
+import de.topobyte.jsoup.components.TextArea;
 import de.topobyte.jsoup.components.Title;
 import de.topobyte.jsoup.components.UnorderedList;
 import de.topobyte.jsoup.components.Wbr;
@@ -379,6 +383,26 @@ public class HTML
 	public static Label label()
 	{
 		return new Label();
+	}
+
+	public static Select select()
+	{
+		return new Select();
+	}
+
+	public static Option option()
+	{
+		return new Option();
+	}
+
+	public static OptGroup optGroup()
+	{
+		return new OptGroup();
+	}
+
+	public static TextArea textarea()
+	{
+		return new TextArea();
 	}
 
 }
