@@ -45,7 +45,7 @@ public class Form extends Element
 			attr("method", "get");
 			break;
 		case POST:
-			attr("method", "put");
+			attr("method", "post");
 			break;
 		}
 	}
