@@ -30,7 +30,7 @@ public class Option extends Element
 	public void setSelected(boolean isSelected)
 	{
 		if (isSelected) {
-			attr("selected");
+			attr("selected", true);
 		} else {
 			removeAttr("selected");
 		}
