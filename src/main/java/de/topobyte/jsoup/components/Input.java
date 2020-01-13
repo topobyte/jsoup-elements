@@ -86,7 +86,7 @@ public class Input extends Element
 	 */
 	public void setChecked(boolean value)
 	{
-		attr("checked", value ? "true" : "false");
+		attr("checked", value);
 	}
 
 	public void setSize(int size)
