@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Meta extends Element
+public class Meta extends Element<Meta>
 {
 
 	public Meta()

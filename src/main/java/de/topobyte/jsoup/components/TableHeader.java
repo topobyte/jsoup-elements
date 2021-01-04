@@ -21,7 +21,7 @@ import org.jsoup.nodes.Node;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class TableHeader extends Element
+public class TableHeader extends Element<TableHeader>
 {
 
 	public TableHeader()

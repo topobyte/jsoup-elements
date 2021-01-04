@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Form extends Element
+public class Form extends Element<Form>
 {
 
 	public static enum Method {

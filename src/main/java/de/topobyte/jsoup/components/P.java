@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class P extends Element
+public class P extends Element<P>
 {
 
 	public P()

@@ -21,7 +21,7 @@ import org.jsoup.nodes.Node;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class TableCell extends Element
+public class TableCell extends Element<TableCell>
 {
 
 	public TableCell()

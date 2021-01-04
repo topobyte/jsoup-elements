@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class TableHead extends Element
+public class TableHead extends Element<TableHead>
 {
 
 	public TableHead()

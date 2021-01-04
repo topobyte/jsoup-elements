@@ -21,7 +21,7 @@ import org.jsoup.nodes.Node;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class List extends Element
+public class List extends Element<List>
 {
 
 	public List(boolean ordered)
