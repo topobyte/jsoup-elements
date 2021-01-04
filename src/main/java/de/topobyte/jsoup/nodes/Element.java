@@ -110,6 +110,11 @@ public class Element extends org.jsoup.nodes.Element
 		return this;
 	}
 
+	public Element at(String text)
+	{
+		return appendText(text);
+	}
+
 	@Override
 	public Element appendText(String text)
 	{
