@@ -21,7 +21,7 @@ import org.jsoup.nodes.Node;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class TableRow extends Element
+public class TableRow extends Element<TableRow>
 {
 
 	public TableRow()

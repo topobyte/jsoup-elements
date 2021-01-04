@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Style extends Element
+public class Style extends Element<Style>
 {
 
 	public Style()

@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Hr extends Element
+public class Hr extends Element<Hr>
 {
 
 	public Hr()

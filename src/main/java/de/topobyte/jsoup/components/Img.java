@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Img extends Element
+public class Img extends Element<Img>
 {
 
 	public Img()

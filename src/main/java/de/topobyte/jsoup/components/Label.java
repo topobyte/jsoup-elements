@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Label extends Element
+public class Label extends Element<Label>
 {
 
 	public Label()

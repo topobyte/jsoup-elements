@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class ListItem extends Element
+public class ListItem extends Element<ListItem>
 {
 
 	public ListItem()

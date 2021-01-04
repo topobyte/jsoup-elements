@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Font extends Element
+public class Font extends Element<Font>
 {
 
 	public Font()

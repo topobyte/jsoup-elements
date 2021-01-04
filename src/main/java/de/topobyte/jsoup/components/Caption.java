@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Caption extends Element
+public class Caption extends Element<Caption>
 {
 
 	public Caption()

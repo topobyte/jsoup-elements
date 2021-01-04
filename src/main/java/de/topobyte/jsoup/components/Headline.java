@@ -21,7 +21,7 @@ import org.jsoup.parser.Tag;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Headline extends Element
+public class Headline extends Element<Headline>
 {
 
 	public enum Level {

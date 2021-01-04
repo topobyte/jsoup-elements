@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Strong extends Element
+public class Strong extends Element<Strong>
 {
 
 	public Strong()

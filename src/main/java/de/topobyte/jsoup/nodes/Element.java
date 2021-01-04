@@ -24,7 +24,8 @@ import org.jsoup.nodes.Attributes;
 import org.jsoup.nodes.Node;
 import org.jsoup.parser.Tag;
 
-public class Element extends org.jsoup.nodes.Element
+public abstract class Element<E extends Element<E>>
+		extends org.jsoup.nodes.Element
 {
 
 	public Element(String tag)
@@ -57,10 +58,15 @@ public class Element extends org.jsoup.nodes.Element
 		super(tag, baseUri, attributes);
 	}
 
-	public Element inner(String text)
+	public E inner(String text)
 	{
 		appendText(text);
-		return this;
+		return getThis();
+	}
+
+	public E getThis()
+	{
+		return (E) this;
 	}
 
 	public <T extends Node> T ac(T child)
@@ -70,44 +76,43 @@ public class Element extends org.jsoup.nodes.Element
 	}
 
 	@Override
-	public Element attr(String attributeKey, boolean attributeValue)
+	public E attr(String attributeKey, boolean attributeValue)
 	{
 		super.attr(attributeKey, attributeValue);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element attr(String attributeKey, String attributeValue)
+	public E attr(String attributeKey, String attributeValue)
 	{
 		super.attr(attributeKey, attributeValue);
-		return this;
+		return getThis();
 	}
 
-	public Element ap(Node child)
+	public E ap(Node child)
 	{
 		return appendChild(child);
 	}
 
 	@Override
-	public Element appendChild(Node child)
+	public E appendChild(Node child)
 	{
 		super.appendChild(child);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element prependChild(Node child)
+	public E prependChild(Node child)
 	{
 		super.prependChild(child);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element insertChildren(int index,
-			Collection<? extends Node> children)
+	public E insertChildren(int index, Collection<? extends Node> children)
 	{
 		super.insertChildren(index, children);
-		return this;
+		return getThis();
 	}
 
 	public Element at(String text)
@@ -116,82 +121,82 @@ public class Element extends org.jsoup.nodes.Element
 	}
 
 	@Override
-	public Element appendText(String text)
+	public E appendText(String text)
 	{
 		super.appendText(text);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element prependText(String text)
+	public E prependText(String text)
 	{
 		super.prependText(text);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element append(String html)
+	public E append(String html)
 	{
 		super.append(html);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element prepend(String html)
+	public E prepend(String html)
 	{
 		super.prepend(html);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element text(String text)
+	public E text(String text)
 	{
 		super.text(text);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element addClass(String className)
+	public E addClass(String className)
 	{
 		super.addClass(className);
-		return this;
+		return getThis();
 	}
 
-	public Element addClasses(Collection<String> classNames)
+	public E addClasses(Collection<String> classNames)
 	{
 		for (String className : classNames) {
 			super.addClass(className);
 		}
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element removeClass(String className)
+	public E removeClass(String className)
 	{
 		super.removeClass(className);
-		return this;
+		return getThis();
 	}
 
-	public Element removeClasses(Collection<String> classNames)
+	public E removeClasses(Collection<String> classNames)
 	{
 		for (String className : classNames) {
 			super.removeClass(className);
 		}
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element toggleClass(String className)
+	public E toggleClass(String className)
 	{
 		super.toggleClass(className);
-		return this;
+		return getThis();
 	}
 
 	@Override
-	public Element classNames(Set<String> classNames)
+	public E classNames(Set<String> classNames)
 	{
 		super.classNames(classNames);
-		return this;
+		return getThis();
 	}
 
 }

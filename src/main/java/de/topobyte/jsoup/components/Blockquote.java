@@ -19,7 +19,7 @@ package de.topobyte.jsoup.components;
 
 import de.topobyte.jsoup.nodes.Element;
 
-public class Blockquote extends Element
+public class Blockquote extends Element<Blockquote>
 {
 
 	public Blockquote()

@@ -39,11 +39,11 @@ public class TestBasics
 		HtmlBuilder builder = new HtmlBuilder();
 		builder.getHtml().attr("lang", "de");
 
-		Element body = builder.getBody();
+		Element<?> body = builder.getBody();
 
 		body.ap(h1().inner("The headline"));
 
-		Element div = body.ap(div("foo"));
+		Element<?> div = body.ap(div("foo"));
 
 		P p = div.ac(p());
 		p.inner("This is a paragraph inside a div. ");
