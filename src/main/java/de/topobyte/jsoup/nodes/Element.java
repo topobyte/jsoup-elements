@@ -115,7 +115,7 @@ public abstract class Element<E extends Element<E>>
 		return getThis();
 	}
 
-	public Element at(String text)
+	public E at(String text)
 	{
 		return appendText(text);
 	}
