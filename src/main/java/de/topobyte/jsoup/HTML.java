@@ -18,6 +18,7 @@
 package de.topobyte.jsoup;
 
 import de.topobyte.jsoup.components.A;
+import de.topobyte.jsoup.components.Address;
 import de.topobyte.jsoup.components.Area;
 import de.topobyte.jsoup.components.Article;
 import de.topobyte.jsoup.components.Aside;
@@ -557,6 +558,11 @@ public class HTML
 	public static Time time()
 	{
 		return new Time();
+	}
+
+	public static Address address()
+	{
+		return new Address();
 	}
 
 	/*
