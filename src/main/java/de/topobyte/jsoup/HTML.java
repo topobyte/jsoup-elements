@@ -64,6 +64,8 @@ import de.topobyte.jsoup.components.Option;
 import de.topobyte.jsoup.components.OrderedList;
 import de.topobyte.jsoup.components.P;
 import de.topobyte.jsoup.components.Pre;
+import de.topobyte.jsoup.components.Q;
+import de.topobyte.jsoup.components.S;
 import de.topobyte.jsoup.components.Script;
 import de.topobyte.jsoup.components.Section;
 import de.topobyte.jsoup.components.Select;
@@ -84,6 +86,7 @@ import de.topobyte.jsoup.components.TableRow;
 import de.topobyte.jsoup.components.TextArea;
 import de.topobyte.jsoup.components.Time;
 import de.topobyte.jsoup.components.Title;
+import de.topobyte.jsoup.components.U;
 import de.topobyte.jsoup.components.UnorderedList;
 import de.topobyte.jsoup.components.Video;
 import de.topobyte.jsoup.components.Wbr;
@@ -363,6 +366,21 @@ public class HTML
 	public static I i()
 	{
 		return new I();
+	}
+
+	public static S s()
+	{
+		return new S();
+	}
+
+	public static Q q()
+	{
+		return new Q();
+	}
+
+	public static U u()
+	{
+		return new U();
 	}
 
 	public static Em em()
