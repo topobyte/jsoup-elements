@@ -70,6 +70,7 @@ import de.topobyte.jsoup.components.Script;
 import de.topobyte.jsoup.components.Section;
 import de.topobyte.jsoup.components.Select;
 import de.topobyte.jsoup.components.Small;
+import de.topobyte.jsoup.components.Source;
 import de.topobyte.jsoup.components.Span;
 import de.topobyte.jsoup.components.Strong;
 import de.topobyte.jsoup.components.Style;
@@ -480,6 +481,11 @@ public class HTML
 	public static IFrame iframe()
 	{
 		return new IFrame();
+	}
+
+	public static Source source()
+	{
+		return new Source();
 	}
 
 	/*

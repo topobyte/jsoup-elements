@@ -51,6 +51,7 @@
 "<section>","Yes","No","No"
 "<select>","Yes","Yes","Yes"
 "<small>","Yes","Yes","Yes"
+"<source>","Yes","No","No"
 "<span>","Yes","Yes","Yes"
 "<strong>","Yes","Yes","Yes"
 "<style>","Yes","Yes","Yes"
