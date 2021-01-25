@@ -18,6 +18,7 @@
 package de.topobyte.jsoup;
 
 import de.topobyte.jsoup.components.A;
+import de.topobyte.jsoup.components.Area;
 import de.topobyte.jsoup.components.Article;
 import de.topobyte.jsoup.components.Aside;
 import de.topobyte.jsoup.components.Audio;
@@ -55,6 +56,7 @@ import de.topobyte.jsoup.components.Label;
 import de.topobyte.jsoup.components.Link;
 import de.topobyte.jsoup.components.ListItem;
 import de.topobyte.jsoup.components.Main;
+import de.topobyte.jsoup.components.Map;
 import de.topobyte.jsoup.components.Mark;
 import de.topobyte.jsoup.components.Meta;
 import de.topobyte.jsoup.components.Nav;
@@ -555,6 +557,20 @@ public class HTML
 	public static Time time()
 	{
 		return new Time();
+	}
+
+	/*
+	 * Maps and areas
+	 */
+
+	public static Map map()
+	{
+		return new Map();
+	}
+
+	public static Area area()
+	{
+		return new Area();
 	}
 
 }
