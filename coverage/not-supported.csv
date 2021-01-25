@@ -5,7 +5,6 @@
 "<base>","Yes","Yes","Yes"
 "<bdi>","Yes","No","No"
 "<bdo>","Yes","Yes","No"
-"<canvas>","Yes","No","No"
 "<cite>","Yes","Yes","Yes"
 "<col>","Yes","Yes","No"
 "<colgroup>","Yes","Yes","No"

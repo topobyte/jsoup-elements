@@ -26,6 +26,7 @@ import de.topobyte.jsoup.components.Blockquote;
 import de.topobyte.jsoup.components.Body;
 import de.topobyte.jsoup.components.Br;
 import de.topobyte.jsoup.components.Button;
+import de.topobyte.jsoup.components.Canvas;
 import de.topobyte.jsoup.components.Caption;
 import de.topobyte.jsoup.components.Code;
 import de.topobyte.jsoup.components.Dd;
@@ -427,6 +428,11 @@ public class HTML
 	public static TextArea textarea()
 	{
 		return new TextArea();
+	}
+
+	public static Canvas canvas()
+	{
+		return new Canvas();
 	}
 
 	/*

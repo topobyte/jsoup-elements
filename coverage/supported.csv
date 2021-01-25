@@ -8,6 +8,7 @@
 "<body>","Yes","Yes","Yes"
 "<br>","Yes","Yes","Yes"
 "<button>","Yes","Yes","Yes"
+"<canvas>","Yes","No","No"
 "<caption>","Yes","Yes","Yes"
 "<code>","Yes","Yes","Yes"
 "<dd>","Yes","Yes","Yes"
