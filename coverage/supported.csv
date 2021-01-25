@@ -42,6 +42,7 @@
 "<tbody>","Yes","Yes","No"
 "<td>","Yes","Yes","Yes"
 "<textarea>","Yes","Yes","Yes"
+"<tfoot>","Yes","Yes","No"
 "<th>","Yes","Yes","Yes"
 "<thead>","Yes","Yes","No"
 "<title>","Yes","Yes","Yes"

@@ -60,6 +60,7 @@ import de.topobyte.jsoup.components.Sup;
 import de.topobyte.jsoup.components.Table;
 import de.topobyte.jsoup.components.TableBody;
 import de.topobyte.jsoup.components.TableCell;
+import de.topobyte.jsoup.components.TableFoot;
 import de.topobyte.jsoup.components.TableHead;
 import de.topobyte.jsoup.components.TableHeader;
 import de.topobyte.jsoup.components.TableRow;
@@ -256,6 +257,11 @@ public class HTML
 	public static TableBody tbody()
 	{
 		return new TableBody();
+	}
+
+	public static TableFoot tfoot()
+	{
+		return new TableFoot();
 	}
 
 	public static TableRow tr()
