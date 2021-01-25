@@ -65,6 +65,7 @@ import de.topobyte.jsoup.components.ObjectResource;
 import de.topobyte.jsoup.components.OptGroup;
 import de.topobyte.jsoup.components.Option;
 import de.topobyte.jsoup.components.OrderedList;
+import de.topobyte.jsoup.components.Output;
 import de.topobyte.jsoup.components.P;
 import de.topobyte.jsoup.components.Pre;
 import de.topobyte.jsoup.components.Q;
@@ -420,6 +421,11 @@ public class HTML
 	public static Input input()
 	{
 		return new Input();
+	}
+
+	public static Output output()
+	{
+		return new Output();
 	}
 
 	public static Button button()

@@ -46,6 +46,7 @@
 "<ol>","Yes","Yes","Yes"
 "<optgroup>","Yes","Yes","Yes"
 "<option>","Yes","Yes","Yes"
+"<output>","Yes","No","No"
 "<p>","Yes","Yes","Yes"
 "<pre>","Yes","Yes","Yes"
 "<q>","Yes","Yes","Yes"
