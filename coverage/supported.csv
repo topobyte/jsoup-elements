@@ -48,6 +48,7 @@
 "<option>","Yes","Yes","Yes"
 "<output>","Yes","No","No"
 "<p>","Yes","Yes","Yes"
+"<param>","Yes","Yes","Yes"
 "<pre>","Yes","Yes","Yes"
 "<q>","Yes","Yes","Yes"
 "<s>","Yes","Yes","No"

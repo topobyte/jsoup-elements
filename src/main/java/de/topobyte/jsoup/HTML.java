@@ -67,6 +67,7 @@ import de.topobyte.jsoup.components.Option;
 import de.topobyte.jsoup.components.OrderedList;
 import de.topobyte.jsoup.components.Output;
 import de.topobyte.jsoup.components.P;
+import de.topobyte.jsoup.components.Param;
 import de.topobyte.jsoup.components.Pre;
 import de.topobyte.jsoup.components.Q;
 import de.topobyte.jsoup.components.S;
@@ -495,6 +496,16 @@ public class HTML
 	public static Source source()
 	{
 		return new Source();
+	}
+
+	public static Param param()
+	{
+		return new Param();
+	}
+
+	public static Param param(String name, String value)
+	{
+		return new Param(name, value);
 	}
 
 	/*
