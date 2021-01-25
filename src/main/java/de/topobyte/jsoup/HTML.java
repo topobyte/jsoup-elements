@@ -18,6 +18,8 @@
 package de.topobyte.jsoup;
 
 import de.topobyte.jsoup.components.A;
+import de.topobyte.jsoup.components.Article;
+import de.topobyte.jsoup.components.Aside;
 import de.topobyte.jsoup.components.B;
 import de.topobyte.jsoup.components.Blockquote;
 import de.topobyte.jsoup.components.Body;
@@ -27,12 +29,17 @@ import de.topobyte.jsoup.components.Caption;
 import de.topobyte.jsoup.components.Code;
 import de.topobyte.jsoup.components.Dd;
 import de.topobyte.jsoup.components.DescriptionList;
+import de.topobyte.jsoup.components.Details;
 import de.topobyte.jsoup.components.Div;
 import de.topobyte.jsoup.components.Dt;
 import de.topobyte.jsoup.components.Em;
+import de.topobyte.jsoup.components.FigCaption;
+import de.topobyte.jsoup.components.Figure;
 import de.topobyte.jsoup.components.Font;
+import de.topobyte.jsoup.components.Footer;
 import de.topobyte.jsoup.components.Form;
 import de.topobyte.jsoup.components.Head;
+import de.topobyte.jsoup.components.Header;
 import de.topobyte.jsoup.components.Headline;
 import de.topobyte.jsoup.components.Headline.Level;
 import de.topobyte.jsoup.components.Hr;
@@ -43,19 +50,24 @@ import de.topobyte.jsoup.components.Input;
 import de.topobyte.jsoup.components.Label;
 import de.topobyte.jsoup.components.Link;
 import de.topobyte.jsoup.components.ListItem;
+import de.topobyte.jsoup.components.Main;
+import de.topobyte.jsoup.components.Mark;
 import de.topobyte.jsoup.components.Meta;
+import de.topobyte.jsoup.components.Nav;
 import de.topobyte.jsoup.components.OptGroup;
 import de.topobyte.jsoup.components.Option;
 import de.topobyte.jsoup.components.OrderedList;
 import de.topobyte.jsoup.components.P;
 import de.topobyte.jsoup.components.Pre;
 import de.topobyte.jsoup.components.Script;
+import de.topobyte.jsoup.components.Section;
 import de.topobyte.jsoup.components.Select;
 import de.topobyte.jsoup.components.Small;
 import de.topobyte.jsoup.components.Span;
 import de.topobyte.jsoup.components.Strong;
 import de.topobyte.jsoup.components.Style;
 import de.topobyte.jsoup.components.Sub;
+import de.topobyte.jsoup.components.Summary;
 import de.topobyte.jsoup.components.Sup;
 import de.topobyte.jsoup.components.Table;
 import de.topobyte.jsoup.components.TableBody;
@@ -65,6 +77,7 @@ import de.topobyte.jsoup.components.TableHead;
 import de.topobyte.jsoup.components.TableHeader;
 import de.topobyte.jsoup.components.TableRow;
 import de.topobyte.jsoup.components.TextArea;
+import de.topobyte.jsoup.components.Time;
 import de.topobyte.jsoup.components.Title;
 import de.topobyte.jsoup.components.UnorderedList;
 import de.topobyte.jsoup.components.Wbr;
@@ -409,6 +422,75 @@ public class HTML
 	public static TextArea textarea()
 	{
 		return new TextArea();
+	}
+
+	/*
+	 * Semantic elements
+	 */
+
+	public static Article article()
+	{
+		return new Article();
+	}
+
+	public static Aside aside()
+	{
+		return new Aside();
+	}
+
+	public static Details details()
+	{
+		return new Details();
+	}
+
+	public static FigCaption figCaption()
+	{
+		return new FigCaption();
+	}
+
+	public static Figure figure()
+	{
+		return new Figure();
+	}
+
+	public static Footer footer()
+	{
+		return new Footer();
+	}
+
+	public static Header header()
+	{
+		return new Header();
+	}
+
+	public static Main main()
+	{
+		return new Main();
+	}
+
+	public static Mark mark()
+	{
+		return new Mark();
+	}
+
+	public static Nav nav()
+	{
+		return new Nav();
+	}
+
+	public static Section section()
+	{
+		return new Section();
+	}
+
+	public static Summary summary()
+	{
+		return new Summary();
+	}
+
+	public static Time time()
+	{
+		return new Time();
 	}
 
 }
