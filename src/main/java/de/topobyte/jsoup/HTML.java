@@ -20,6 +20,7 @@ package de.topobyte.jsoup;
 import de.topobyte.jsoup.components.A;
 import de.topobyte.jsoup.components.Article;
 import de.topobyte.jsoup.components.Aside;
+import de.topobyte.jsoup.components.Audio;
 import de.topobyte.jsoup.components.B;
 import de.topobyte.jsoup.components.Blockquote;
 import de.topobyte.jsoup.components.Body;
@@ -33,6 +34,7 @@ import de.topobyte.jsoup.components.Details;
 import de.topobyte.jsoup.components.Div;
 import de.topobyte.jsoup.components.Dt;
 import de.topobyte.jsoup.components.Em;
+import de.topobyte.jsoup.components.Embed;
 import de.topobyte.jsoup.components.FigCaption;
 import de.topobyte.jsoup.components.Figure;
 import de.topobyte.jsoup.components.Font;
@@ -45,6 +47,7 @@ import de.topobyte.jsoup.components.Headline.Level;
 import de.topobyte.jsoup.components.Hr;
 import de.topobyte.jsoup.components.Html;
 import de.topobyte.jsoup.components.I;
+import de.topobyte.jsoup.components.IFrame;
 import de.topobyte.jsoup.components.Img;
 import de.topobyte.jsoup.components.Input;
 import de.topobyte.jsoup.components.Label;
@@ -54,6 +57,7 @@ import de.topobyte.jsoup.components.Main;
 import de.topobyte.jsoup.components.Mark;
 import de.topobyte.jsoup.components.Meta;
 import de.topobyte.jsoup.components.Nav;
+import de.topobyte.jsoup.components.ObjectResource;
 import de.topobyte.jsoup.components.OptGroup;
 import de.topobyte.jsoup.components.Option;
 import de.topobyte.jsoup.components.OrderedList;
@@ -80,6 +84,7 @@ import de.topobyte.jsoup.components.TextArea;
 import de.topobyte.jsoup.components.Time;
 import de.topobyte.jsoup.components.Title;
 import de.topobyte.jsoup.components.UnorderedList;
+import de.topobyte.jsoup.components.Video;
 import de.topobyte.jsoup.components.Wbr;
 
 public class HTML
@@ -422,6 +427,35 @@ public class HTML
 	public static TextArea textarea()
 	{
 		return new TextArea();
+	}
+
+	/*
+	 * Embedding content
+	 */
+
+	public static ObjectResource object()
+	{
+		return new ObjectResource();
+	}
+
+	public static Embed embed()
+	{
+		return new Embed();
+	}
+
+	public static Audio audio()
+	{
+		return new Audio();
+	}
+
+	public static Video video()
+	{
+		return new Video();
+	}
+
+	public static IFrame iframe()
+	{
+		return new IFrame();
 	}
 
 	/*
